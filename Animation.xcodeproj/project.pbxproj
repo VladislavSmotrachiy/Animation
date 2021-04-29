@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52003D65263B2090003E2357 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52003D64263B2090003E2357 /* DataManger.swift */; };
 		52232C042639A3E300389D9E /* ModelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52232C032639A3E300389D9E /* ModelAnimation.swift */; };
 		52F3F4242639A1E80028D11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3F4232639A1E80028D11C /* AppDelegate.swift */; };
 		52F3F4262639A1E80028D11C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3F4252639A1E80028D11C /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		1250BAF4804E27126A361F1F /* Pods-Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.release.xcconfig"; path = "Target Support Files/Pods-Animation/Pods-Animation.release.xcconfig"; sourceTree = "<group>"; };
+		52003D64263B2090003E2357 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
 		52232C032639A3E300389D9E /* ModelAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAnimation.swift; sourceTree = "<group>"; };
 		52F3F4202639A1E80028D11C /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F3F4232639A1E80028D11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				52F3F4252639A1E80028D11C /* SceneDelegate.swift */,
 				52F3F4272639A1E80028D11C /* ViewController.swift */,
 				52232C032639A3E300389D9E /* ModelAnimation.swift */,
+				52003D64263B2090003E2357 /* DataManger.swift */,
 				52F3F4292639A1E80028D11C /* Main.storyboard */,
 				52F3F42C2639A1E90028D11C /* Assets.xcassets */,
 				52F3F42E2639A1E90028D11C /* LaunchScreen.storyboard */,
@@ -211,6 +214,7 @@
 				52232C042639A3E300389D9E /* ModelAnimation.swift in Sources */,
 				52F3F4282639A1E80028D11C /* ViewController.swift in Sources */,
 				52F3F4242639A1E80028D11C /* AppDelegate.swift in Sources */,
+				52003D65263B2090003E2357 /* DataManger.swift in Sources */,
 				52F3F4262639A1E80028D11C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

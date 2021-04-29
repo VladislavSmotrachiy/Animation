@@ -5,15 +5,25 @@
 //  Created by ErrorV9 on 28.04.2021.
 //
 
-import Spring
+import Foundation
 
 struct Animation {
     
     let perset: String
     let curve: String
-    let force: CGFloat
-    let duration: CGFloat
-    let delay: CGFloat
+    let force: Float
+    let duration: Float
+    let delay: Float
+    
+    var discription: String {
+        """
+            Perset: \(perset)
+            Curve: \(curve)
+            Force:\(String(format: "%.02f", force))
+            Duration:\(String(format: "%.02f", duration))
+            Daley:\(String(format: "%.02f", delay))
+        """
+    }
 }
 
 extension Animation {
@@ -21,8 +31,8 @@ extension Animation {
     static func getAnimation() -> [Animation] {
         var animations: [Animation] = []
     
-        let perset = Spring.AnimationPreset.allCases.shuffled()
-        let curve = Spring.AnimationCurve.allCases.shuffled()
+        let perset = DataManager.shared.perset.shuffled()
+        let curve = DataManager.shared.cure.shuffled()
         
         for index in 0...10 {
             let animation = Animation(

@@ -10,12 +10,9 @@ import Spring
 class ViewController: UIViewController {
 
     @IBOutlet weak var persetLabelText: UILabel!
-    @IBOutlet weak var forceLabelText: UILabel!
-    @IBOutlet weak var delayLabelText: UILabel!
-    @IBOutlet weak var curveLabelText: UILabel!
-    
     @IBOutlet weak var animationView: SpringView!
-
+    
+//MARK: Private properties
     private let allAnimation = Animation.getAnimation()
     private var currentIndex: Int = 0
     private var currentIndexTwo: Int = 1
@@ -34,13 +31,10 @@ class ViewController: UIViewController {
            
         animationView.animation = value.perset
         animationView.curve = value.curve
-        animationView.delay = value.delay
-        animationView.force = value.force
-        animationView.duration = value.duration
-        persetLabelText.text = "Perset: \(value.perset)"
-        curveLabelText.text = "Curve: \(value.curve)"
-        delayLabelText.text = "Delay: \(String(format: "%.2f", value.delay))"
-        forceLabelText.text = "Force: \(String(format: "%.2f", value.force))"
+        animationView.delay = CGFloat(value.delay)
+        animationView.force = CGFloat(value.force)
+        animationView.duration = CGFloat(value.duration)
+        persetLabelText.text = value.discription
         animationView.animate()
         sender.setTitle(nextValue.perset, for: .normal)
         sender.animation = "pop"
@@ -63,10 +57,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
     private func colorTextLabel(){
-        persetLabelText.textColor = .red
-        forceLabelText.textColor = .orange
-        delayLabelText.textColor = .gray
-        curveLabelText.textColor = .blue
+        persetLabelText.textColor = .blue
     }
 }
 
